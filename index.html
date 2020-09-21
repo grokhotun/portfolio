@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Лендинг, портфолио, сайт-портфолио, frontend-разработчик, HTML-верстальщик">
+    <meta name="description" content="Сайт портфолио">
+    <!-- Включить если нужна поддержка ie11 -->
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>ASKAR IALIAEV</title>
+</head>
+
+<body class="lock">
+    <div class="preloader">
+        <div class="preloader__body">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-fullscreen">
+                <div class="container">
+                    <div class="fullscreen">
+                        <h1 class="fullscreen__title">Askar Ialiaev</h1>
+                        <h2 class="fullscreen__subtitle">Frontend разработчик / HTML - верстальщик</h2>
+                        <div class="fullscreen__buttons">
+                            <a href="#portfolio" class="btn btn--left js-smoothscroll-btn">Портфолио</a>
+                            <a href="#me" class="btn btn--right js-smoothscroll-btn">Обо мне</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="me" class="s-about-me">
+                <div class="container">
+                    <div class="about-me">
+                        <div class="about-me__col">
+                            <h3 class="about-me__title main-title">Привет!</h3>
+                            <div class="about-me__text">
+                                <p>Я frontend-разработчик из Уфы. Неплохо программирую на JavaScript, занимаюсь версткой лендингов, многостраничных сайтов и интернет магазинов, читаю техническую литературу и каждый день изучаю что-то новое.</p>
+                                <p>Ниже Вы можете ознакомиться со списком моих навыков и моими работами.</p>
+                            </div>
+                            <h4 class="about-me__subtitle main-title">Навыки</h4>
+                            <ul class="about-me__list">
+                                <li class="about-me__item">HTML / HTML5 / PUG</li>
+                                <li class="about-me__item">CSS / CSS3</li>
+                                <li class="about-me__item">SASS / SCSS / LESS / Методология БЭМ</li>
+                                <li class="about-me__item">JavaScript / TypeScript / jQuery</li>
+                                <li class="about-me__item">React JS + Redux / Thunk / Saga</li>
+                                <li class="about-me__item">Gulp / Webpack</li>
+                                <li class="about-me__item">Git / Github</li>
+                                <li class="about-me__item">MySQL</li>
+                                <li class="about-me__item">JSON</li>
+                                <li class="about-me__item">Разговорный английский</li>
+                            </ul>
+                        </div>
+                        <div class="about-me__col">
+                            <div class="about-me__photo"><img src="./img/me.jpg" alt="Фото профиля" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio" class="s-portfolio">
+                <div class="container">
+                    <div class="portfolio">
+                        <h5 class="portfolio__title main-title">Портфолио</h5>
+                        <div class="portfolio__body">
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/akumulator/preview.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">Магазин автомобильных аккумуляторов «Akumulator.by»</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/akumulator-by-site/links.html" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://github.com/grokhotun/akumulator-by-site" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/aiogi/preview.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">Онлайн библиотека упражнений по йоге «Aiogi»</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/aiogi-site/links.html" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://github.com/grokhotun/aiogi-site#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/turkish/preview.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">Курсы турецкого языка «Диалог»</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/individual-turkish-site/links.html" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://github.com/grokhotun/individual-turkish-site#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/freshmed/preview.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">Медицинский центр «Freshmed»</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/freshmed-site/links.html" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://grokhotun.github.io/freshmed-site/#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/anita/preview.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">Магазин нижнего белья «Anita»</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/anita-shop-website/" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://github.com/grokhotun/anita-shop-website#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/almaz-distroy/preview.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">«Алмаз Дистрой» - алмазная резка, бурение и сверление</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/almaz-distroy-website/" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://github.com/grokhotun/almaz-distroy-website/#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/react/1.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">MoviesSearch App - SPA поиска фильмов</div>
+                                    <div class="card-portfolio__description">
+                                        <p class="card-portfolio__text">Тестовое задание в казанскую компанию на позицию React frontend-разработчик.</p>
+                                    </div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                        <li class="bubble">React</li>
+                                        <li class="bubble">Redux</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/movies-search/" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://github.com/grokhotun/movies-search#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/react/2.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">DeliveryFood - SPA доставка еды на дом</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                        <li class="bubble">CSS</li>
+                                        <li class="bubble">HTML</li>
+                                        <li class="bubble">React</li>
+                                        <li class="bubble">React Router</li>
+                                        <li class="bubble">Pet-проект</li>
+                                        <li class="bubble">Redux</li>
+                                        <li class="bubble">JSON-server</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+
+                                    <a href="#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                            <div class="card-portfolio">
+                                <div class="card-portfolio__header">
+                                    <div class="card-portfolio__preview">
+                                        <img src="../img/html-mover.png" alt="Превью сайта" />
+                                    </div>
+                                </div>
+                                <div class="card-portfolio__body">
+                                    <div class="card-portfolio__title">HTML-mover - плагин, позволяющий более гибко адаптировать верстку без повторения кода</div>
+                                    <div class="card-portfolio__description"></div>
+                                    <ul class="card-portfolio__stack">
+                                        <li class="bubble">JavaScript</li>
+                                    </ul>
+                                </div>
+                                <div class="card-portfolio__footer">
+                                    <a href="https://grokhotun.github.io/html-mover/" class="card-portfolio__button btn">Демо</a>
+                                    <a href="https://github.com/grokhotun/html-mover#" class="card-portfolio__button btn">Код на github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        <footer class="s-footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__socials">
+                        <a href="https://github.com/grokhotun"><svg class="icon icon-github socials-icon">
+                                <use xlink:href="img/svg/sprite.svg#github"></use>
+                            </svg></a>
+                        <a href="tg://resolve?domain=ohalikoff"><svg class="icon icon-telegram socials-icon">
+                                <use xlink:href="img/svg/sprite.svg#telegram"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
+<!-- Данное React приложение было разработано в рамках прохождения интервью в казанскую компанию на позицию middle frontend-разработчик. Было предложено выполнить тестовое задание и разработать однастраничное приложение. Эта работа представляет собой приложение для поиска фильмов с возможностью поиска по названию, тегам, и сохранением понравившихся фильмов в закладки. В работе использовалась библиотека React, в качестве системы хранения данных использовался Redux -->
