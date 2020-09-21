@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "ASKAR IALIAEV",
+    "keywords": "Лендинг, портфолио, сайт-портфолио, frontend-разработчик, HTML-верстальщик",
+    "description": "Сайт портфолио"
+})
+<body class="lock">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-fullscreen">
+                <div class="container">
+                    <div class="fullscreen">
+                        <h1 class="fullscreen__title">Askar Ialiaev</h1>
+                        <h2 class="fullscreen__subtitle">Frontend разработчик / HTML - верстальщик</h2>
+                        <div class="fullscreen__buttons">
+                            <a href="#portfolio" class="btn btn--left js-smoothscroll-btn">Портфолио</a>
+                            <a href="#me" class="btn btn--right js-smoothscroll-btn">Обо мне</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="me" class="s-about-me">
+                <div class="container">
+                    <div class="about-me">
+                        <div class="about-me__col">
+                            <h3 class="about-me__title main-title">Привет!</h3>
+                            <div class="about-me__text">
+                                <p>Я frontend-разработчик из Уфы. Неплохо программирую на JavaScript, занимаюсь версткой лендингов, многостраничных сайтов и интернет магазинов, читаю техническую литературу и каждый день изучаю что-то новое.</p>
+                                <p>Ниже Вы можете ознакомиться со списком моих навыков и моими работами.</p>
+                            </div>
+                            <h4 class="about-me__subtitle main-title">Навыки</h4>
+                            <ul class="about-me__list">
+                                <li class="about-me__item">HTML / HTML5 / PUG</li>
+                                <li class="about-me__item">CSS / CSS3</li>
+                                <li class="about-me__item">SASS / SCSS / LESS / Методология БЭМ</li>
+                                <li class="about-me__item">JavaScript / TypeScript / jQuery</li>
+                                <li class="about-me__item">React JS + Redux / Thunk / Saga</li>
+                                <li class="about-me__item">Gulp / Webpack</li>
+                                <li class="about-me__item">Git / Github</li>
+                                <li class="about-me__item">MySQL</li>
+                                <li class="about-me__item">JSON</li>
+                                <li class="about-me__item">Разговорный английский</li>
+                            </ul>
+                        </div>
+                        <div class="about-me__col">
+                            <div class="about-me__photo"><img src="./img/me.jpg" alt="Фото профиля" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio" class="s-portfolio">
+                <div class="container">
+                    <div class="portfolio">
+                        <h5 class="portfolio__title main-title">Портфолио</h5>
+                        <div class="portfolio__body">
+                            @@loop('./modules/card-portfolio/card-portfolio.html', [
+                                {
+                                    "href":"index.html",
+                                    "preview":"akumulator/preview.png",
+                                    "title":"Магазин автомобильных аккумуляторов «Akumulator.by»",
+                                    "stack":['JavaScript', 'CSS', 'HTML'],
+                                    "demo":"https://grokhotun.github.io/akumulator-by-site/links.html",
+                                    "source":"https://github.com/grokhotun/akumulator-by-site"
+                                },
+                                {
+                                    "preview":"aiogi/preview.png",
+                                    "title":"Онлайн библиотека упражнений по йоге «Aiogi»",
+                                    "stack":['JavaScript', 'CSS', 'HTML'],
+                                    "demo":"https://grokhotun.github.io/aiogi-site/links.html",
+                                    "source":"https://github.com/grokhotun/aiogi-site"
+                                },
+                                {
+                                    "preview":"turkish/preview.png",
+                                    "title":"Курсы турецкого языка «Диалог»",
+                                    "stack":['JavaScript', 'CSS', 'HTML'],
+                                    "demo":"https://grokhotun.github.io/individual-turkish-site/links.html",
+                                    "source":"https://github.com/grokhotun/individual-turkish-site"
+                                },
+                                {
+                                    "preview":"freshmed/preview.png",
+                                    "title":"Медицинский центр «Freshmed»",
+                                    "stack":['JavaScript', 'CSS', 'HTML'],
+                                    "demo":"https://grokhotun.github.io/freshmed-site/links.html",
+                                    "source":"https://grokhotun.github.io/freshmed-site/"
+                                },
+                                {
+                                    "preview":"anita/preview.png",
+                                    "title":"Магазин нижнего белья «Anita»",
+                                    "stack":['JavaScript', 'CSS', 'HTML'],
+                                    "demo":"https://grokhotun.github.io/anita-shop-website/",
+                                    "source":"https://github.com/grokhotun/anita-shop-website"
+                                },
+                                {
+                                    "preview":"almaz-distroy/preview.png",
+                                    "title":"«Алмаз Дистрой» - алмазная резка, бурение и сверление",
+                                    "stack":['JavaScript', 'CSS', 'HTML'],
+                                    "demo":"https://grokhotun.github.io/almaz-distroy-website/",
+                                    "source":"https://github.com/grokhotun/almaz-distroy-website/"
+                                },
+                                {
+                                    "preview":"react/1.png",
+                                    "title":"MoviesSearch App - SPA поиска фильмов",
+                                    "text":"Тестовое задание в казанскую компанию на позицию React frontend-разработчик.",
+                                    "stack": ['JavaScript', 'CSS', 'HTML', 'React', 'Redux'],
+                                    "demo":"https://grokhotun.github.io/movies-search/",
+                                    "source":"https://github.com/grokhotun/movies-search"
+                                },
+                                {
+                                    "preview":"react/2.png",
+                                    "title":"DeliveryFood - SPA доставка еды на дом",
+                                    "stack": ['JavaScript', 'CSS', 'HTML', 'React','React Router','Pet-проект' , 'Redux', 'JSON-server']
+                                },
+                                {
+                                    "preview":"html-mover.png",
+                                    "title":"HTML-mover - плагин, позволяющий более гибко адаптировать верстку без повторения кода",
+                                    "stack": ['JavaScript'],
+                                    "demo":"https://grokhotun.github.io/html-mover/",
+                                    "source":"https://github.com/grokhotun/html-mover"
+                                },
+                            ])
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>
+<!-- Данное React приложение было разработано в рамках прохождения интервью в казанскую компанию на позицию middle frontend-разработчик. Было предложено выполнить тестовое задание и разработать однастраничное приложение. Эта работа представляет собой приложение для поиска фильмов с возможностью поиска по названию, тегам, и сохранением понравившихся фильмов в закладки. В работе использовалась библиотека React, в качестве системы хранения данных использовался Redux -->

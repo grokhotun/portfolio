@@ -1,0 +1,292 @@
+.fullscreen {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+        min-height: 70px;
+        color: #333;
+        @include responsiveFont(46, 40, 1);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 32px;
+        margin: 0px 0px 40px 0px;
+        @media (max-width: $maxwidth2) {
+            text-align: center;
+        }
+        @media (max-width: $maxwidth3) {
+            letter-spacing: 10px;
+        }
+    }
+    &__subtitle {
+        font-size: 22px;
+        color: #444;
+        margin: 0px 0px 40px 0px;
+        min-height: 25px;
+        @media (max-width: $maxwidth2) {
+            text-align: center;
+        }
+        @media (max-width: $maxwidth3) {
+            font-size: 16px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        & > * {
+            opacity: 0;
+            visibility: hidden;
+            &:not(:last-child) {
+                margin: 0px 40px 0px 0px;
+            }
+        }
+        @media (max-width: $maxwidth2) {
+            justify-content: center;
+        }
+    }
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $maxwidth2) {
+        flex-direction: column-reverse;
+    }
+    &__col {
+        flex: 0 0 50%;
+    }
+    &__title {
+        margin: 0px 0px 60px 0px;
+        @media (max-width: $maxwidth3) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    &__text {
+        margin: 0px 0px 40px 0px;
+        @media (min-width: $maxwidth2) {
+            max-width: 90%;
+        }
+        & > p {
+            color: #444;
+            @include responsiveFont(22, 16, 1);
+            color: #444;
+            line-height: 44px;
+            @media (max-width: $maxwidth3) {
+                line-height: 25 / 22 * 100%;
+                text-align: justify;
+            }
+            &:not(:last-child) {
+                margin: 0px 0px 40px 0px;
+            }
+        }
+    }
+    &__subtitle {
+        margin: 0px 0px 40px 0px;
+    }
+    &__list {
+        color: #444;
+        @include responsiveFont(22, 16, 1);
+        & > li {
+            &:before {
+                content: "—";
+                margin: 0px 10px 0px 0px;
+            }
+            &:not(:last-child) {
+                margin: 0px 0px 20px 0px;
+                @media (max-width: $maxwidth3) {
+                    margin: 0px 0px 12px 0px;
+                }
+            }
+        }
+    }
+    &__photo {
+        @media (max-width: $maxwidth2) {
+            margin: 0px 0px 40px 0px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.portfolio {
+    &__title {
+        margin: 0px 0px 60px 0px;
+        @media (max-width: $maxwidth3) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        @media (max-width: $maxwidth2) {
+            margin: 0 -5px;
+        }
+        @media (max-width: $maxwidth3) {
+            margin: 0;
+        }
+        & > * {
+            margin: 0 15px 30px 15px;
+            flex: 0 0 calc(33% - 30px);
+            @media (max-width: $maxwidth1) {
+                flex: 0 0 calc(50% - 30px);
+            }
+            @media (max-width: $maxwidth2) {
+                margin: 0 5px 15px 5px;
+            }
+            @media (max-width: $maxwidth3) {
+                flex: 1 1 100%;
+            }
+        }
+    }
+}
+
+.card-portfolio {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #efefef;
+    transition: all 1s;
+    &__header {
+        margin: 0px 0px 50px 0px;
+        @media (max-width: $maxwidth2) {
+            margin: 0px 0px 25px 0px;
+        }
+    }
+    &__preview {
+        overflow: hidden;
+        max-height: 400px;
+        @media (min-width: $maxwidth2) {
+            min-height: 400px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    &__body {
+        flex: 1;
+        padding: 10px;
+        margin: 0px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: bold;
+        @include responsiveFont(28, 20, 1);
+        line-height: 130%;
+        margin: 0px 0px 12px 0px;
+        color: #000000;
+    }
+    &__description {
+        margin: 0px 0px 20px 0px;
+        flex: 1;
+    }
+    &__text {
+        color: #161616;
+        font-size: 20px;
+        line-height: 140%;
+    }
+    &__stack {
+        & > * {
+            margin: 0px 0px 5px 0px;
+        }
+    }
+    &__footer {
+        padding: 10px;
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 10px 0px;
+            }
+        }
+        .btn {
+            text-align: center;
+            font-size: 18px;
+            @media (max-width: $maxwidth3) {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.slide-from-right {
+    opacity: 1;
+    visibility: visible;
+    animation: slideFromRight .5s;
+}
+
+.slide-from-left {
+    opacity: 1;
+    visibility: visible;
+    animation: slideFromLeft .5s
+}
+
+.carret {
+    &:after {
+        position: relative;
+        content: "|";
+        font-size: inherit;
+        animation: flicker 0.5s infinite alternate;
+    }
+}
+
+@keyframes slideFromRight{
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidden {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

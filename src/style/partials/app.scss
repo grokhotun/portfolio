@@ -1,0 +1,102 @@
+//Миксины
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+	// @include no-touch-select;
+	font-size: 14px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.ibg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: $maxwidth + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $maxwidth1) {
+		max-width: 970px;
+	}
+	@media (max-width: $maxwidth2) {
+		max-width: 750px;
+	}
+	@media (max-width: $maxwidth3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+//==================================================================================================//
+//             ПОДКЛЮЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ФАЙЛОВ СТИЛЕЙ                                             //
+//==================================================================================================//
+
+@import "fonts";
+@import "null.scss";
+@import "ui.scss";
+@import "small-blocks.scss";
+// @include scrollBarMovesPageNone;
+
+.s {
+	&-fullscreen {
+		position: relative;
+		min-height: 100vh;
+		display: flex;
+		border-bottom: 1px solid #e3e3e3;
+	}
+	&-header {
+		padding: 50px 0;
+		border-bottom: 1px solid #e3e3e3;
+	}
+	&-about-me {
+		border-bottom: 1px solid #e3e3e3;
+		padding: 105px 0;
+		@media (max-width:$maxwidth3){
+			padding: 50px 0;
+		}
+	}
+	&-skills {
+		border-bottom: 1px solid #e3e3e3;
+		padding: 105px 0;
+		@media (max-width:$maxwidth3){
+			padding: 50px 0;
+		}
+	}
+	&-portfolio {
+		padding: 105px 0;
+		@media (max-width:$maxwidth3){
+			padding: 50px 0;
+		}
+	}
+	&-footer {
+		border-top: 1px solid #e3e3e3;
+		padding: 50px 0;
+	}
+}
+
+//Подключение стилей всех страниц
+@import "../pages/index.scss";
+
+//Подключение модулей
+@import "../modules/modules.scss";
